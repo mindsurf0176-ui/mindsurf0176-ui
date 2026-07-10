@@ -1,32 +1,58 @@
-# 이민서 (Minseo Lee)
+<div align="center">
 
-### AI Automation Engineer · Technical Art & Tooling
+<h1>이민서 · Minseo Lee</h1>
 
-반복적인 제작 작업을 Python·Godot·LLM 도구로 자동화하고, 결과물을 실제 런타임에서 검증 가능한 파이프라인으로 만듭니다. 1인으로 앱과 게임을 설계·개발·출시하며, AI가 만든 결과보다 **생성 규칙·결정적 조립·실행 검증**을 직접 소유하는 방식으로 일합니다.
+<h3>AI Automation Engineer · Technical Art & Tooling</h3>
 
-## Selected work
+<p>
+  <strong>Godot·Python으로 반복 제작을 자동화하고,<br>
+  AI 결과를 실제 런타임에서 검증 가능한 파이프라인으로 만듭니다.</strong>
+</p>
 
-| Project | What I built | Evidence |
-|---|---|---|
-| [Vesper / Game Asset Pipeline](https://github.com/mindsurf0176-ui/vesper) | 상태 기반 스프라이트 생성 → 공통박스·발 정렬 → Godot 상태기계·캡처 QA | 6 states · 33 frames · 16 Python tools |
-| [Fissh](https://github.com/mindsurf0176-ui/fissh) | 폰에서 Mac의 Claude Code를 제어하는 WebSocket 브리지와 QR 페어링 | Node.js · Capacitor · Swift · Tailscale |
-| [Callog](https://github.com/mindsurf0176-ui/callog) | 사진 기반 칼로리 추정을 측정 가능한 5단계 보정 파이프라인으로 구현 | pass rate 70→88% · MAPE 31→19% |
-| [Oracle Tarot](https://github.com/mindsurf0176-ui/oracle-tarot) | 결정론 엔진·3-provider 폴백·결제 백필을 결합한 유료 LLM 서비스 | 40 serverless endpoints · failure-safe result |
-| [Haebari](https://github.com/mindsurf0176-ui/haebari) | 4단계 캐시와 in-flight dedupe를 적용한 멀티채널 운세 앱 인프라 | 토스 출시 · App Store 심사 중 |
-| [Kotoba](https://github.com/mindsurf0176-ui/kotoba) | 4개 ONNX 모델을 Swift로 이식한 완전 오프라인 일본어 학습앱 | 9,734 cards · runtime network 0 |
+<p>
+  <a href="https://minseo-log.vercel.app"><img src="https://img.shields.io/badge/BUILD_LOG-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Build log"></a>
+  <a href="mailto:mindsurf0176@gmail.com"><img src="https://img.shields.io/badge/EMAIL-1F6FEB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+</div>
+
+---
+
+## Flagship · Vesper Asset Pipeline
+
+<p align="center">
+  <a href="https://github.com/mindsurf0176-ui/vesper">
+    <img src="https://raw.githubusercontent.com/mindsurf0176-ui/vesper/master/screenshots/godot-runtime.png" width="760" alt="Vesper Godot runtime capture">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATES-6-17365D?style=flat-square" alt="6 states">
+  <img src="https://img.shields.io/badge/FRAMES-33-17365D?style=flat-square" alt="33 frames">
+  <img src="https://img.shields.io/badge/PYTHON_TOOLS-16-17365D?style=flat-square" alt="16 Python tools">
+  <img src="https://img.shields.io/badge/QA-GODOT_RUNTIME-2F6F55?style=flat-square&logo=godotengine&logoColor=white" alt="Godot runtime QA">
+</p>
+
+AI로 만든 캐릭터를 정지 이미지로 붙이는 대신, 상태별 스프라이트를 반복 생성하고 공통 박스·발 위치로 결정적 조립한 뒤 Godot 4.6.2에서 import·smoke·runtime capture까지 검증합니다.
+
+**Problem** 프레임마다 달라지는 캐릭터·무기 형태<br>
+**Decision** 4개 접근 비교 후 상태 기반 픽셀 애니메이션 채택<br>
+**Proof** 6상태 · 33프레임 · 16개 Python 도구 · 5,573 LOC
+
+**[파이프라인과 실제 결과 보기 →](https://github.com/mindsurf0176-ui/vesper)**
+
+## Core tools
+
+<p>
+  <img src="https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white" alt="Godot">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift">
+  <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX Runtime">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</p>
 
 ## How I work
 
-```text
-Problem → measurable baseline → deterministic pipeline → runtime QA → production feedback
-```
-
-- **Technical art:** Godot, Python, Pillow/NumPy, sprite assembly, runtime capture QA
-- **AI systems:** OpenAI·Anthropic·Gemini orchestration, structured output, fallback and cost control
-- **Product engineering:** TypeScript/React, Vercel serverless, Postgres/Redis, Swift/SwiftUI
-- **On-device ML:** ONNX Runtime, mobile inference, caching and concurrency control
-
-## Contact
-
-- Email: [mindsurf0176@gmail.com](mailto:mindsurf0176@gmail.com)
-- GitHub: [@mindsurf0176-ui](https://github.com/mindsurf0176-ui)
+**Problem** → measurable baseline → deterministic pipeline → runtime QA → production feedback
