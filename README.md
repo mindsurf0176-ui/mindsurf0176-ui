@@ -2,7 +2,7 @@
 
 <h1>이민서 · Minseo Lee</h1>
 
-<h3>AI Automation Engineer · Technical Art & Tooling</h3>
+<h3>AI Automation Engineer<br>Technical Art &amp; Tooling</h3>
 
 <p>
   <strong>Godot·Python으로 반복 제작을 자동화하고,<br>
@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://github.com/mindsurf0176-ui/vesper">
-    <img src="https://raw.githubusercontent.com/mindsurf0176-ui/vesper/master/screenshots/godot-runtime.png" width="760" alt="Vesper Godot runtime capture">
+    <img src="https://raw.githubusercontent.com/mindsurf0176-ui/vesper/master/screenshots/godot-runtime.png" width="100%" alt="Vesper Godot runtime capture">
   </a>
 </p>
 
